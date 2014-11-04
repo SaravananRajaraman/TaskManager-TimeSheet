@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HRMs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="open source project to learn english">
+    <meta name="author" content="mugilsoft">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--script type="text/javascript" src="js/angular.min.js"></script-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <div class="col-md-6 column"><h2>Projects</h2></div>
+            <div class="col-md-6 column"><br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="addNew">
+                    Add New
+                </button>
+            </div>
+            <div class="col-md-12 column">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Android App
+                        </td>
+                        <td>
+                            Approved
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Gemsketch
+                        </td>
+                        <td>
+                            Declined
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Kutung
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Inhouse
+                        </td>
+                        <td>
+                            Call in to confirm
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6 column">
+            <div class="col-md-6 column"><h2>Logs</h2></div>
+            <div class="col-md-6 column"><br><!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" id="viewLogs">
+                    View
+                </button>
+            </div>
+            <div class="col-md-12 column">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Android App
+                        </td>
+                        <td>
+                            Approved
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Gemsketch
+                        </td>
+                        <td>
+                            Declined
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Kutung
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Inhouse
+                        </td>
+                        <td>
+                            Call in to confirm
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="projectTitle">Title:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="projectTitle" placeholder="Project Title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="projectDescription">Description:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="projectDescription" placeholder="Project Description"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveChanges" style="display: none">Save changes</button>
+                <button type="button" class="btn btn-primary" id="addNewProject" style="display: none"> Add </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
