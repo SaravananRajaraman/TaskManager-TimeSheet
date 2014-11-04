@@ -1,6 +1,13 @@
 .container{
     margin-top: 2%;
 }
-.column{
-    /*outline: 1px solid #000000;*/
+
+.bs-example{
+    margin: 1%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1000;
+    right: 0px;
+    float: right;
+    display: none;
 }
